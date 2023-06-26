@@ -1,4 +1,4 @@
-package com.dibros.core.docs;
+package com.softtek.docs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
