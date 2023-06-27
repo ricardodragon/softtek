@@ -11,9 +11,8 @@ import java.util.Set;
 
 @Entity
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Cliente implements Serializable {
 
     @Id

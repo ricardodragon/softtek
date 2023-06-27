@@ -12,6 +12,6 @@ public interface ClienteMapper {
 
     ClienteDTO toDTO(Cliente cliente);
 
-    Cliente toModel(ClientePostDTO clienteDTO);
+    Cliente toModelSemID(ClientePostDTO clienteDTO);
 
 }

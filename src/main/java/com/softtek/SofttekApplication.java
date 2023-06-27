@@ -8,4 +8,5 @@ public class SofttekApplication {
     public static void main(String[] args) {
         SpringApplication.run(SofttekApplication.class, args);
     }
+
 }

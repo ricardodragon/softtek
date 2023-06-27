@@ -1,6 +1,5 @@
 package com.softtek.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -11,9 +10,8 @@ import java.util.Date;
 @Entity
 @Data
 @EqualsAndHashCode(exclude = "cliente")
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Transacao implements Serializable {
 
     @Id
@@ -25,6 +23,8 @@ public class Transacao implements Serializable {
     private TipoTransacao tipo;
     @Column(name = "valor", precision = 16, scale=2)
     private BigDecimal valor;
+    @Column(name = "taxa", precision = 16, scale=2)
+    private BigDecimal taxa;
     private Date data;
 
     @MapsId("id_cliente")
